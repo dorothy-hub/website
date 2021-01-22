@@ -94,10 +94,11 @@
     display:none;  
 }
 .mobileMenu {
-    background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+    background: linear-gradient(to left, black 50%, white 50%) right;
     background-size: 200%;
     transition: .5s ease-out;
 }
 .mobileMenu:hover {
     background-position: left;
+    color:black;
 }
