@@ -89,3 +89,7 @@
 .noshow {
     display: none;
 }
+.topBar {
+    opacity:0 ;
+    display:none;  
+}

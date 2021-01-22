@@ -1,11 +1,14 @@
 var show = 'aboutContent'
 var bj = 'bj2'
+var showMenu = false
 document.getElementById("about").addEventListener("click", showAbout); 
 document.getElementById("project").addEventListener("click", showProject); 
 document.getElementById("gallery").addEventListener("click", showGallery); 
 document.getElementById("contact").addEventListener("click", showContact); 
 document.getElementById("nextIcon").addEventListener("click", next); 
 document.getElementById("prevIcon").addEventListener("click", prev); 
+document.getElementById("menu").addEventListener("click", dropdownMenu); 
+
 function showAbout() {
     if (show != 'aboutContent') {
         let temp = show
@@ -16,8 +19,10 @@ function showAbout() {
         document.getElementById(temp).classList.remove('show')
         document.getElementById(temp).classList.add('noshow')
     }
+    if(showMenu) dropdownMenu()
 }
 function showProject() {
+    console.log('click hereee')
     if (show != 'projectContent') {
         let temp = show
         show = 'projectContent'
@@ -26,6 +31,7 @@ function showProject() {
         document.getElementById(temp).classList.remove('show')
         document.getElementById(temp).classList.add('noshow')
     }
+    if(showMenu) dropdownMenu()
 }
 function showGallery() {
     if (show != 'galleryContent') {
@@ -36,6 +42,7 @@ function showGallery() {
         document.getElementById(temp).classList.remove('show')
         document.getElementById(temp).classList.add('noshow')
     }
+    if(showMenu) dropdownMenu()
 }
 function showContact() {
     if (show != 'contactContent') {
@@ -46,6 +53,7 @@ function showContact() {
         document.getElementById(temp).classList.remove('show')
         document.getElementById(temp).classList.add('noshow')
     }
+    if(showMenu) dropdownMenu()
 }
 function next() {
     if (bj == 'bj2') {
@@ -107,5 +115,25 @@ function prev() {
         image2.src = temp
         let image1 = document.getElementById('bj1Img')
         image1.src = "https://cdn.bildhive.com/noinstace/212971a6266044bf8ee7542ad14a234e.png"
+    }
+}
+function dropdownMenu (){
+    if (!showMenu) {
+        showMenu = true
+        document.getElementById('menuIcon').style.display = null
+        document.getElementById('menuIcon').style.opacity = 0
+        document.getElementById('closeIcon').style.display = 'block'
+        document.getElementById('closeIcon').style.opacity = 1
+        document.getElementById('menuOptions').style.height = '100vh'
+        // document.getElementById('menuIcon').classList.add('noshow')
+        // document.getElementById('closeIcon').classList.remove('noshow')
+        // document.getElementById('closeIcon').classList.add('showClose')
+    } else {
+        showMenu = false
+        document.getElementById('closeIcon').style.display = null
+        document.getElementById('closeIcon').style.opacity = 0
+        document.getElementById('menuIcon').style.display = 'block'
+        document.getElementById('menuIcon').style.opacity = 1
+        document.getElementById('menuOptions').style.height = '0vh'
     }
 }

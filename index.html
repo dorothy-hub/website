@@ -9,6 +9,7 @@
 <title>Page Title</title>
 </head>
 <body>
+    
     <div>
         <div class="justify-end p-2 hidden md:flex" style="background-color:#e8ebed">
             <div id="about" class="pr-2 pl-2">About</div>
@@ -16,9 +17,25 @@
             <div id="gallery" class="pr-2 pl-2">Gallery</div>
             <div id="contact" class="pr-2 pl-2">Contact</div>
         </div>
+        <div id="menu" class="md:hidden p-3" style="position:fixed; top:0; z-index:100; overflow: hidden;">
+            <div id="menuIcon" class="topBar" style="display:block; opacity: 1;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </div>
+            <div style="color:white" id="closeIcon" class="topBar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </div>
+        </div>
+        <div id="menuOptions" class="menuOptions" style="height:0vh; background-color:black; transition:height 0.3s ease-out; overflow: hidden;">
+          <div class="mt-10" style="overflow:hidden; white-space:nowrap; color: white;">
+            <div onclick="showAbout()" style="text-align: center;">About</div>
+            <div onclick="showProject()" style="text-align: center;">Project</div>
+            <div onclick="showGallery()" style="text-align: center;">Gallery</div>
+            <div onclick="showContact()" style="text-align: center;">Contact</div>
+          </div>
+        </div>
         <div id="aboutContent" class="show">
             <!-- image and intro -->
-            <div class="flex justify-center items-center h-auto relative" style="height: calc(100vh - 40px); min-height:766px">
+            <div class="flex justify-center items-center h-auto relative" style="height: calc(100vh - 40px); min-height:850px">
             
                 <div class="md:flex items-center justify-center">
                     
@@ -43,7 +60,7 @@
 
 
         <!-- scroll animation -->
-            <div style="height:100vh; background-color:black; color:#e8e8e8" class="flex w-full justify-center items-center">
+            <div style="min-height:700px; height:100vh; background-color:black; color:#e8e8e8" class="flex w-full justify-center items-center">
                 <div class="md:w-2/3 md:p-36 relative" >
                     <div class="border-top"></div>
                     <div class="border-left"></div>
@@ -196,7 +213,7 @@
         </div>
         <div id="projectContent" class="noshow">
             <!-- intro projects -->
-            <div class="m-5" style="height:50vh; min-height:500px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/workshop.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+            <div class="m-5" style="margin-top:47px; height:50vh; min-height:500px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/workshop.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
                 <div class="w-full h-full flex items-center">
                     <div class="w-full" style="color:white">
                         <h1 style="text-align: center;font-size:50px; font-family: Futura;">My Projects</h1>
