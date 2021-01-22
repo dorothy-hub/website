@@ -53,29 +53,29 @@ function next() {
         let image = document.getElementById('bj2Img')
         console.log('aaaa', image.src)
         let temp = image.src
-        image.src = "file:///Users/thucnguyen/dorothy_website/assets/blackjack1.png"
+        image.src = "https://cdn.bildhive.com/noinstace/1c71d3a3163547f99eb73f9a04981a36.png"
         let image1 = document.getElementById('bj1Img')
         image1.src = temp
         let image2 = document.getElementById('bj3Img')
-        image2.src = "file:///Users/thucnguyen/dorothy_website/assets/blackjack2.png"
+        image2.src = "https://cdn.bildhive.com/noinstace/212971a6266044bf8ee7542ad14a234e.png"
     } else if (bj == 'bj3') {
         bj = 'bj1' 
         let image = document.getElementById('bj2Img')
         let temp = image.src
-        image.src = "file:///Users/thucnguyen/dorothy_website/assets/blackjack2.png"
+        image.src = "https://cdn.bildhive.com/noinstace/212971a6266044bf8ee7542ad14a234e.png"
         let image1 = document.getElementById('bj1Img')
         image1.src = temp
         let image2 = document.getElementById('bj3Img')
-        image2.src = "file:///Users/thucnguyen/dorothy_website/assets/blackjack.png"
+        image2.src = "https://cdn.bildhive.com/noinstace/f1d594be14894d5daeb00bdea8e0bbab.png"
     } else if (bj == 'bj1') {
         bj = 'bj2' 
         let image = document.getElementById('bj2Img')
         let temp = image.src
-        image.src = "file:///Users/thucnguyen/dorothy_website/assets/blackjack.png"
+        image.src = "https://cdn.bildhive.com/noinstace/f1d594be14894d5daeb00bdea8e0bbab.png"
         let image1 = document.getElementById('bj1Img')
         image1.src = temp
         let image2 = document.getElementById('bj3Img')
-        image2.src = "file:///Users/thucnguyen/dorothy_website/assets/blackjack1.png"
+        image2.src = "https://cdn.bildhive.com/noinstace/1c71d3a3163547f99eb73f9a04981a36.png"
     }
 
 }
@@ -84,28 +84,28 @@ function prev() {
         bj = 'bj1'
         let image = document.getElementById('bj2Img')
         let temp = image.src
-        image.src = "file:///Users/thucnguyen/dorothy_website/assets/blackjack2.png"
+        image.src = "https://cdn.bildhive.com/noinstace/212971a6266044bf8ee7542ad14a234e.png"
         let image2 = document.getElementById('bj3Img')
         image2.src = temp
         let image1 = document.getElementById('bj1Img')
-        image1.src = "file:///Users/thucnguyen/dorothy_website/assets/blackjack1.png"
+        image1.src = "https://cdn.bildhive.com/noinstace/1c71d3a3163547f99eb73f9a04981a36.png"
     } else if (bj == 'bj1') {
         bj = 'bj3' 
         let image = document.getElementById('bj2Img')
         let temp = image.src
-        image.src = "file:///Users/thucnguyen/dorothy_website/assets/blackjack1.png"
+        image.src = "https://cdn.bildhive.com/noinstace/1c71d3a3163547f99eb73f9a04981a36.png"
         let image2 = document.getElementById('bj3Img')
         image2.src = temp
         let image1 = document.getElementById('bj1Img')
-        image1.src = "file:///Users/thucnguyen/dorothy_website/assets/blackjack.png"
+        image1.src = "https://cdn.bildhive.com/noinstace/f1d594be14894d5daeb00bdea8e0bbab.png"
     } else if (bj == 'bj3') {
         bj = 'bj2' 
         let image = document.getElementById('bj2Img')
         let temp = image.src
-        image.src = "file:///Users/thucnguyen/dorothy_website/assets/blackjack.png"
+        image.src = "https://cdn.bildhive.com/noinstace/f1d594be14894d5daeb00bdea8e0bbab.png"
         let image2 = document.getElementById('bj3Img')
         image2.src = temp
         let image1 = document.getElementById('bj1Img')
-        image1.src = "file:///Users/thucnguyen/dorothy_website/assets/blackjack2.png"
+        image1.src = "https://cdn.bildhive.com/noinstace/212971a6266044bf8ee7542ad14a234e.png"
     }
 }
