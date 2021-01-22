@@ -51,6 +51,7 @@ function next() {
     if (bj == 'bj2') {
         bj = 'bj3'
         let image = document.getElementById('bj2Img')
+        console.log('aaaa', image.src)
         let temp = image.src
         image.src = "file:///Users/thucnguyen/dorothy_website/assets/blackjack1.png"
         let image1 = document.getElementById('bj1Img')
