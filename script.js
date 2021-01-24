@@ -19,6 +19,7 @@ function showAbout() {
         document.getElementById(temp).classList.remove('show')
         document.getElementById(temp).classList.add('noshow')
     }
+    window.scroll(0,0)
     if(showMenu) dropdownMenu()
 }
 function showProject() {
@@ -31,6 +32,7 @@ function showProject() {
         document.getElementById(temp).classList.remove('show')
         document.getElementById(temp).classList.add('noshow')
     }
+    window.scroll(0,0)
     if(showMenu) dropdownMenu()
 }
 function showGallery() {
@@ -42,6 +44,7 @@ function showGallery() {
         document.getElementById(temp).classList.remove('show')
         document.getElementById(temp).classList.add('noshow')
     }
+    window.scroll(0,0)
     if(showMenu) dropdownMenu()
 }
 function showContact() {
@@ -53,6 +56,7 @@ function showContact() {
         document.getElementById(temp).classList.remove('show')
         document.getElementById(temp).classList.add('noshow')
     }
+    window.scroll(0,0)
     if(showMenu) dropdownMenu()
 }
 function next() {
