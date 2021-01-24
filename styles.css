@@ -115,7 +115,9 @@
         height:350px
     }
 }
-
+.social:hover {
+    border:solid 1px white;
+}
 .show {
     display: block;
 }
@@ -138,5 +140,10 @@
 html {
     scroll-behavior: smooth;
 }   
+ol, ul {
+    list-style-type: circle; 
+    margin: 16px 0;
+    padding: 0 0 0 40px; 
+}
 
 
