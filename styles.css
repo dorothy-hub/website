@@ -1,4 +1,12 @@
 @media screen and (min-width: 750px){
+    .project:not(:hover) .projectImage {
+        opacity:0;
+        transition: opacity 0.3s ease-out;
+    }
+    .project:hover .projectImage {
+        opacity:1;
+        transition: opacity 0.3s ease-out;
+    }
     .webdev:not(:hover) .webcontent{
         opacity:0;
         transition: opacity 0.3s ease-out;
@@ -71,6 +79,31 @@
         width:200px;
         height:200px
     }
+    .parent {
+        position: relative;
+        width: 100%;
+        height:500px;
+    }
+    .one, .two {
+        position: absolute;
+        height: 500px;
+        width: 65%;
+    }
+    .one {
+        left: 0;
+        top: 0;
+        height:500px;
+        /* background-image: url(assets/ngenlogo.jpeg); */
+        -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%); 
+    }
+    .two {
+        right: 0;
+        top: 0;
+        background-color:black;
+        -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%); 
+        }
 }
 @media screen and (max-width: 750px){
     .projectImage {
@@ -102,3 +135,8 @@
     background-position: left;
     color:black;
 }
+html {
+    scroll-behavior: smooth;
+}   
+
+

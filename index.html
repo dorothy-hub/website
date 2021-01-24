@@ -17,7 +17,7 @@
             <div id="gallery" class="pr-2 pl-2">Resume</div>
             <div id="contact" class="pr-2 pl-2">Contact</div>
         </div>
-        <div id="menu" class="md:hidden p-3" style="position:fixed; top:0; z-index:150; overflow: hidden;">
+        <div id="menu" class="md:hidden p-3" style="position:fixed; top:0; z-index:2000; overflow: hidden;">
             <div id="menuIcon" class="topBar" style="display:block; opacity: 1;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </div>
@@ -25,7 +25,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </div>
         </div>
-        <div id="menuOptions" class="menuOptions" style="position:fixed; width:100%; z-index:100; height:0vh; background-color:black; transition:height 0.3s ease-out; overflow: hidden;">
+        <div id="menuOptions" class="menuOptions" style="position:fixed; width:100%; z-index:1000; height:0vh; background-color:black; transition:height 0.3s ease-out; overflow: hidden;">
           <div class="mt-10" style="overflow:hidden; white-space:nowrap; color: white;">
             <div class="py-2 mobileMenu" onclick="showAbout()" style="text-align: center;">About</div>
             <div class="py-2 mobileMenu" onclick="showProject()" style="text-align: center;">Project</div>
@@ -35,14 +35,14 @@
         </div>
         <div id="aboutContent" class="show">
             <!-- image and intro -->
-            <div class="flex justify-center items-center h-auto relative" style="height: calc(100vh - 40px); min-height:900px">
+            <div class="flex justify-center items-center h-auto relative" style="height: calc(100vh - 40px); min-height:900px;">
             
                 <div class="md:flex items-center justify-center">
                     
                     <div class="md:w-1/3 w-full justify-center flex">
                     <img class="w-4/5 md:w-full" style="object-fit:cover; max-height:500px" src="assets/IMG_7831.jpeg" />
                     </div>
-                    <div class="p-8 md:w-1/3 w-full md:-ml-10" style="background-color:#e8ebed;" >
+                    <div class="p-8 md:w-1/3 w-full md:-ml-10" style="background-color:black; color:white" >
                     <h2 style="font-size:30px" class="font-semibold">Hi, my name is Dorothy</h2>
                     I am currently pursuing a Computer Engineering degree at Ryerson University. I love working with logic gates, making hardware/
                     software designs, learning coding languages, Artificial Intelligence, and traveling!
@@ -85,10 +85,12 @@
         
 
         <!-- education -->
-            <div class="mt-20">
-                <div class="font-semibold flex justify-center" style="background-color:#c2e9ff ;font-size:30px; font-family:Didot; width:100%">Education</div>
-                <div class="mt-5 flex items-center" style="height:500px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/ryerson.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
-                    <div class="w-full" style="text-align: center; color:white">
+            <div class="mt-10">
+                <div class="w-full flex md:justify-center">
+                    <div class="font-semibold p-5 md:w-2/3" style="border-left: 5px solid black ;font-size:30px; font-family:Didot; font-size:50px">Education</div>
+                </div>
+                <div class="flex items-center mt-10" style="height:500px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/ryerson1.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                    <div class="w-full" style="text-align: center; color:white ">
                         <h1 style="font-family:Futura; font-size:50px;">Ryerson University</h1>
                         <p">Bachelor of Computer Engineering</p>
                         <p>Expected Graduation Year : 2022</p>
@@ -98,30 +100,51 @@
 
 
         <!-- work experience -->
-            <div style="background-color:#c2e9ff" class="p-5 mt-10">
-                <div class="font-semibold flex justify-center" style="font-size:30px; font-family:Didot; width:100%">Education</div>
-                <div class="w-full flex justify-center">
-                    <div class="md:w-4/5 w-full mt-5 p-5 md:flex" style="background-color:white; border-radius:4px; justify-content: space-between;">
-                        <div class="items-center">
-                        <p>Ryerson University</p>
-                        <p>Computer Engineering</p>
-                        <p>Expected Graduation Year : 2022</p>
-                        </div>
+            <!-- <div class="mt-10">
+                <div class="w-full flex md:justify-center">
+                    <div class="font-semibold p-5 md:w-2/3" style="border-left: 5px solid black ;font-size:30px; font-family:Didot; font-size:50px">Experience</div>
+                </div>
+                <div class="md:flex mt-10" style="background-color:black">
+                    <div class="md:w-3/4">
+                        <img src="assets/ngenlogo.jpeg" />
+                    </div>
+                    <div class="md:w-1/4 flex items-center p-5" style="color:white;">
                         <div>
-                        <img src="assets/ryerson_logo.jpeg" />
+                            <h3 class="font-semibold" style="font-size:30px">NGEN Communications</h3>
+                            <p>Frontend Developer</p>
+                            <p>From: June 2020</p>
                         </div>
                     </div>
                 </div>
+            </div> -->
+            <div class="mt-10 w-full flex md:justify-center">
+                <div class="font-semibold p-5 md:w-2/3" style="border-left: 5px solid black ;font-size:30px; font-family:Didot; font-size:50px">Experience</div>
             </div>
-
-
+            <div class="parent mt-10">
+                <div class="one">
+                    <img style="height:500px; width:100%; object-fit: cover;" src="assets/ngenlogo.jpeg" />
+                </div>
+                <div class="two">
+                    <div class="hidden md:block p-10">
+                        <h3 class="font-semibold" style="font-size:30px; color:white; text-align: end;">NGEN Communications</h3>
+                        <p style="color:white; text-align: end;">Frontend Developer</p>
+                        <p style="color:white; text-align: end;">From: June 2020</p>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color:black;" class="md:hidden block p-10">
+                <h3 class="font-semibold" style="font-size:30px; color:white; text-align: end;">NGEN Communications</h3>
+                <p style="color:white; text-align: end;">Frontend Developer</p>
+                <p style="color:white; text-align: end;">From: June 2020</p>
+            </div>
         <!-- skills -->
-            <div class="mt-20 p-5" style="background-color:#d6d6d6">
-                <div class="font-semibold flex justify-center" style="font-size:30px; font-family:Didot; width:100%">Skills</div>
-            
+            <div class="mt-10 w-full flex md:justify-center">
+                <div class="font-semibold p-5 md:w-2/3" style="border-left: 5px solid black ;font-size:30px; font-family:Didot; font-size:50px">Skills</div>
+            </div>
+            <div class="mt-10 p-5" style="background-color:black">
                 <div class="mt-5 flex justify-center">
                     <div class="md:flex md:w-4/5" style="justify-content: space-between;">
-                        <div class="webdev flex items-center justify-center mb-5" style="height:300px; width:250px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/webdev.jpg');background-position: center; background-repeat: no-repeat; background-size: cover;" >
+                        <div data-aos="fade-right" class="webdev flex items-center justify-center mb-5" style="height:300px; width:250px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/webdev.jpg');background-position: center; background-repeat: no-repeat; background-size: cover;" >
                             <div class="webcontent" style="color:white; text-align:center;">
                                 <div style="border-bottom:1px solid white"><h3>Website Development</h3></div>
                                 <div class="flex mt-5" style="font-size:12px; justify-content: space-between;">
@@ -138,7 +161,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="webdev flex items-center justify-center mb-5" style="height:300px; width:250px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/appdev.png');background-position: center; background-repeat: no-repeat; background-size: cover;" >
+                        <div  data-aos="fade-up" class="webdev flex items-center justify-center mb-5" style="height:300px; width:250px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/appdev.png');background-position: center; background-repeat: no-repeat; background-size: cover;" >
                             <div class="webcontent" style="color:white; text-align:center">
                                 <div style="border-bottom:1px solid white"><h3>App Development</h3></div>
                                 <div class="mt-5">
@@ -149,7 +172,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex items-center justify-center mb-5 webdev" style="height:300px; width:250px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/programming.jpg');background-position: center; background-repeat: no-repeat; background-size: cover;" >
+                        <div  data-aos="fade-left" class="flex items-center justify-center mb-5 webdev" style="height:300px; width:250px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/programming.jpg');background-position: center; background-repeat: no-repeat; background-size: cover;" >
                             <div class="webcontent" style="color:white; text-align:center">
                                 <div style="border-bottom:1px solid white"><h3>Programming languages</h3></div>
                                 <div class="mt-5">
@@ -165,7 +188,7 @@
                 </div>
                 <div class="flex justify-center">
                     <div class="md:flex md:w-4/5" style="justify-content: space-between;">
-                        <div class="webdev flex items-center justify-center mb-5" style="height:300px; width:250px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/ai.jpg');background-position: center; background-repeat: no-repeat; background-size: cover;" >
+                        <div data-aos="fade-right" class="webdev flex items-center justify-center mb-5" style="height:300px; width:250px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/ai.jpg');background-position: center; background-repeat: no-repeat; background-size: cover;" >
                             <div class="webcontent" style="color:white; text-align:center">
                                 <div style="border-bottom:1px solid white"><h3>Artificial Intelligence</h3></div>
                                 <div class="mt-5">
@@ -183,7 +206,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="webdev flex items-center justify-center mb-5" style="height:300px; width:250px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/hardware.jpg');background-position: center; background-repeat: no-repeat; background-size: cover;" >
+                        <div data-aos="fade-up" class="webdev flex items-center justify-center mb-5" style="height:300px; width:250px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/hardware.jpg');background-position: center; background-repeat: no-repeat; background-size: cover;" >
                             <div class="webcontent" style="color:white; text-align:center">
                                 <div style="border-bottom:1px solid white"><h3>Hardware Development</h3></div>
                                 <div class="mt-5">
@@ -195,7 +218,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="webdev flex items-center justify-center mb-5" style="height:300px; width:250px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/os.png');background-position: center; background-repeat: no-repeat; background-size: cover;" >
+                        <div data-aos="fade-left" class="webdev flex items-center justify-center mb-5" style="height:300px; width:250px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/os.png');background-position: center; background-repeat: no-repeat; background-size: cover;" >
                             <div class="webcontent" style="color:white; text-align:center">
                                 <div style="border-bottom:1px solid white"><h3>Operating Systems</h3></div>
                                 <div class="mt-5">
@@ -226,26 +249,49 @@
             </div>
             <div class="w-full flex justify-center">
                 <div class="md:flex md:w-4/5 mt-20 justify-center" style="justify-content: space-between;">
-                    <div class="mb-5 md:pb-0" style="width:200px">
-                        <video controls>
-                            <source src="assets/vid.mp4" type="video/mp4">
-                            <source src="assets/vid.ogg" type="video/ogg">
-                        Your browser does not support the video tag.
-                        </video>
-                        <div data-aos="fade-up" class="flex justify-center p-3 mt-3" style="border-radius:50px; background:#ffda99">Remote Control Car</div>
+                    <div class="mb-5 md:pb-0 project">
+                        <div class="relative">
+                            <div class="absolute projectImage items-center" style="z-index:100; width:100%; height:100%; background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )">
+                                <a href="#controlcar">
+                                    <div class="flex justify-center items-center w-full h-full" style="color:white; text-align: center;">
+                                        SEE THIS PROJECT
+                                    </div>
+                                </a>
+                            </div>
+                            <img style="width:350px; height:400px; object-fit: cover;" src="assets/bot.jpg" />
+                        </div>
+                        <div data-aos="fade-up" class="pl-3 mt-3" style="border-left: 5px black solid;">Remote Control Car</div>
                     </div>    
-                    <div class="mb-5 md:pb-0">
-                        <img style="width:200px;" src="assets/blackjack.png" />
-                        <div data-aos="fade-up" class="flex justify-center p-3 mt-3" style="border-radius:50px; background:#ffda99">Blackjack Game</div>
+                    <div class="mb-5 md:pb-0 project">
+                        <div class="relative">
+                            <div class="absolute projectImage items-center" style="z-index:100; width:100%; height:100%; background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )">
+                                <a href="#blackjack">
+                                    <div class="flex justify-center items-center w-full h-full" style="color:white; text-align: center;">
+                                        SEE THIS PROJECT
+                                    </div>
+                                </a>
+                            </div>
+                            <img style="width:350px; height:400px; object-fit: cover;" src="assets/blackjack.png" />
+                        </div>
+                        <div data-aos="fade-up" class="pl-3 mt-3" style="border-left: 5px black solid;">Blackjack Game</div>
                     </div>
-                    <div class="mb-5 md:pb-0">
-                        <img style="width:200px; height:355.55px; object-fit: cover;" src="assets/taxi.png" />
-                        <div data-aos="fade-up" class="flex justify-center p-3 mt-3" style="border-radius:50px; background:#ffda99">Taxi Game</div>
+                    <div class="mb-5 md:pb-0 project">
+                        <div class="relative">
+                            <div class="absolute projectImage items-center" style="z-index:100; width:100%; height:100%; background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )">
+                                <a href="#taxi">
+                                    <div class="flex justify-center items-center w-full h-full" style="color:white; text-align: center;">
+                                        SEE THIS PROJECT
+                                    </div>
+                                </a>
+                            </div>
+                            <img style="width:350px; height:400px; object-fit: cover;" src="assets/taxi.png" />
+                        </div>
+                        <div data-aos="fade-up" class="pl-3 mt-3" style="border-left: 5px black solid;">Taxi Game</div>
                     </div>
                 </div>
             </div>
             <!-- remote control car -->
-            <div class="md:flex items-center mt-20" style="background-color:#000">
+            <div id="controlcar" class="md:flex items-center mt-20" style="background-color:#000">
                 <div class="flex items-center justify-center" style="width:100%; height:500px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/botcar.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
                     <div style="color:white; text-align:center; font-family: Futura; font-size:30px">Remote Control Car</div>
                 </div>
@@ -254,14 +300,21 @@
                     <p>A control car with different functions: move forward, backward, left, right and break. Everything in this car can be controlled right on your phone, just by a click of a button!</p>
                     <h5 class="font-semibold mt-5" style="font-family: Futura;">Technologies Used:</h5>
                     <div class="md:flex" style="justify-content: space-between;">
-                        <div class="md:w-1/3 w-full" data-aos="fade-up">Adruino (C++)</div>
-                        <div class="md:w-1/3 w-full" data-aos="fade-up">ESP-8266</div>
-                        <div class="md:w-1/3 w-full" data-aos="fade-up">Blynk</div>
+                        <div class="md:w-1/3 w-full" >Adruino (C++)</div>
+                        <div class="md:w-1/3 w-full">ESP-8266</div>
+                        <div class="md:w-1/3 w-full">Blynk</div>
                     </div>
+                </div>
+                <div>
+                    <video controls>
+                        <source src="assets/vid.mp4" type="video/mp4">
+                        <source src="assets/vid.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
             <!-- blackjack game -->
-            <div class="mt-10 p-10">
+            <div id="blackjack" class="mt-10 p-10">
                 <h3 style="text-align: center; font-size:30px; font-family: Futura;">Blackjack Game</h3>
                 <div class="md:p-20 md:pt-0">
                     <h5 style="font-family: Futura;" class="font-semibold">Description:</h5>
@@ -292,18 +345,19 @@
                     </div>
                 </div>
             </div>
-            <div class="md:m-20 md:mb-0 mb-0 p-10 flex items-center" style="min-height:500px; border-radius:5px; background-color:black">
+            <!-- taxi game -->
+            <div id="taxi" class="md:m-20 md:mb-0 mb-0 p-10 flex items-center" style="min-height:500px; border-radius:5px; background-color:black">
                 <div style="color:white; text-align: center; width: 100%;">
                     <h3 style="font-size:30px; font-family: Futura;">Taxi Game</h3>
                     <div class="flex w-full justify-center mt-5 mb-5">
                         <div class="md:flex md:w-4/5" style="justify-content: space-between;">
-                            <div class="mb-5 md:mb-0">
+                            <div data-aos="fade-right" class="mb-5 md:mb-0">
                                 <img style="width:170px; height:220px" src="assets/taxi.png" />
                             </div>
-                            <div class="mb-5 md:mb-0">
+                            <div  data-aos="fade-up" class="mb-5 md:mb-0">
                                 <img style="width:170px; height:220px" src="assets/taxi1.png" />
                             </div>
-                            <div class="mb-5 md:mb-0">
+                            <div  data-aos="fade-left" class="mb-5 md:mb-0">
                                 <img style="width:170px; height:220px" src="assets/taxi2.png" />
                             </div>
                         </div>
@@ -315,11 +369,120 @@
                 </div>
             </div>
         </div>
-        <div id="galleryContent" class="noshow">
-            gallery
+        <!-- resume -->
+        <div id="galleryContent" class="noshow" style="background-color:black">
+            <div class="w-full md:flex">
+                <div class="h-full md:w-2/5" style="background-color:#171a17;">
+                    <img style="object-fit:cover; height:100vh" src="assets/linkedin-removebg.png" />
+                </div>
+                <div class="p-10 md:w-3/5" style="height:100vh; overflow-y:scroll">
+                    <div>
+                        <h3 class="font-semibold" style="font-size:50px; color:white">Dorothy Nguyen</h3>
+                        <div class="flex">
+                            <p class="font-semibold" style="color:#0092cc">20 years</p>
+                            <div style="color:#e8ebed" class="px-3">/</div>
+                            <p class="font-semibold" style="color:#0092cc">Engineering Student</p>
+                            <div style="color:#e8ebed" class="px-3">/</div>
+                            <p class="font-semibold" style="color:#0092cc">Frontend Developer</p>
+                        </div>
+                        <div class="mt-5" style="color:#d7dadb">
+                            A third-year student at Ryerson University, who is pursuing a Computer Engineering Degree. Has a strong interest in Frontend Development, Machine Learning and Software / Hardware Development. Strong engineering knowledge with multiple projects, coding languages and real-life experiences. Excellent research, analytical, and communication skills, got first place in the ICUE/IBM Case Competition 2019.
+                        </div>
+                        <hr class="mt-5 mb-5" style="color:#e8ebed">
+                        <div>
+                            <h3 class="font-semibold" style="font-size:30px; color:white">Technical Skills</h3>
+                            <div class="w-full mt-5">
+                                <p style="font-size:20px; color:white">Website Development</p>
+                                <div>
+                                    <p style="color:#e8ebed">HTMl</p>
+                                    <p style="color:#e8ebed">CSS</p>
+                                    <p style="color:#e8ebed">JavaScript</p>
+                                    <p style="color:#e8ebed">Vue JS</p>
+                                    <p style="color:#e8ebed">VueX</p>
+                                    <p style="color:#e8ebed">Google Cloud / Firebase</p>
+                                </div>
+                            </div>
+                            <div class="md:flex mt-5">
+                                <div class="md:w-1/2">
+                                    <p style="font-size:20px; color:white">App Development</p>
+                                    <div>
+                                        <p style="color:#e8ebed">Swift</p>
+                                        <p style="color:#e8ebed">Xcode</p>
+                                    </div>
+                                </div>
+                                <div class="md:1/2">
+                                    <p style="font-size:20px; color:white">Program Language</p>
+                                    <div>
+                                        <p style="color:#e8ebed">C / C++ / Adruino</p>
+                                        <p style="color:#e8ebed">Python</p>
+                                        <p style="color:#e8ebed">Java</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:flex mt-5">
+                                <div class="md:w-1/2">
+                                    <p style="font-size:20px; color:white">Artificial Intelligence</p>
+                                    <div>
+                                        <p style="color:#e8ebed">Keras Library</p>
+                                        <p style="color:#e8ebed">Tensorflow</p>
+                                    </div>
+                                </div>
+                                <div class="md:1/2">
+                                    <p style="font-size:20px; color:white">Data Processing</p>
+                                    <div>
+                                        <p style="color:#e8ebed">MATLAB</p>
+                                        <p style="color:#e8ebed">Simulink</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:flex mt-5">
+                                <div class="md:w-1/2">
+                                    <p style="font-size:20px; color:white">Hardware Development</p>
+                                    <div>
+                                        <p style="color:#e8ebed">Assembly Language</p>
+                                        <p style="color:#e8ebed">FPGA</p>
+                                        <p style="color:#e8ebed">VHDL</p>
+                                    </div>
+                                </div>
+                                <div class="md:1/2">
+                                    <p style="font-size:20px; color:white">Operating Systems</p>
+                                    <div>
+                                        <p style="color:#e8ebed">Windows</p>
+                                        <p style="color:#e8ebed">Mac OS</p>
+                                        <p style="color:#e8ebed">Linux</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <hr class="mt-5 mb-5" style="color:#e8ebed">
+                        <div>
+                            <h3 class="font-semibold" style="font-size:30px; color:white">School Involvement and Volunteer</h3>
+                            <div class="mt-5">
+                                <p class="font-semibold" style="font-size:20px; color:white">Ryerson Artificial Intelligence</p>
+                                <p class="font-semibold" style="color:#0092cc">Computer Vision Engieering</p>
+                                <p style="color:#e8ebed">Using Keras library and Google Collaboratory to collect the dataset with other members of the team, and build the model of teh team's project</p>
+                                <p style="color:#e8ebed">Learn, practiced coding skills and debugging code with other members during team trainings on a weekly basis to improve personal skills and the team's performance</p>
+                                <p style="color:#e8ebed">Researched on different approaches to Ai: different libraries, neural networks, deep learning and machine learning to contribuite to the group and strengthen knowledge</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+            <!-- <div class="flex justify-center" style="height:50%; background-color:#023e75"> 
+                <div class="flex" style="height:calc (50% - 20px); width:70%; min-width:700px">
+                    <div style="width:50%">
+                        <img style="object-fit:cover;; width:100%" src="assets/linkedin.jpeg" />
+                    </div>
+                    <div style="background-color:white; width:50%">
+                        asdfs
+                    </div>
+                </div>
+                
+            </div> -->
         </div>
         <div id="contactContent" class="noshow">
-            contact
+            
         </div>
     </div>
 
@@ -327,6 +490,9 @@
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
+    AOS.init({
+        duration: 1200,
+        easing: 'ease-in-out-back'
+    });
 </script>
 </html>
